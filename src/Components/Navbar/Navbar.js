@@ -18,14 +18,14 @@ const Navbar = () => {
                 </div>
                 <ul className="nav__links active">
                     <li className="link">
-                        <a href="../Landing_Page/LandingPage.html">Home</a>
+                        <a href="../LandingPage/LandingPage.html">Home</a>
                     </li>
                     <li className="link">
                         <a href="#">Appointments</a>
                     </li>
 
                     <li className="link">
-                        <a href="../Sign_Up//Sign_Up.html">
+                        <a href="../SignUp//SignUp.html">
                             <button className="btn1">Sign Up</button>
                         </a>
                     </li>

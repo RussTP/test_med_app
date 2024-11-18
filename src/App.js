@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Import custom Navbar component
 import Navbar from './Components/Navbar/Navbar';
 import LandingPage from './Components/LandingPage/LandingPage';
+import SignUp from './Components/SignUp/SignUp';
+import Login from './Components/Login/Login';
+
 
 // Function component for the main App
 function App() {
