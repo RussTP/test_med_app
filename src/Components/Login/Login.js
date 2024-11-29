@@ -39,6 +39,8 @@ return (
               <br />
               <div className="login-text">
                 Forgot Password?
+                <br></br>
+                <span><Link to="/Login" style={{ color: '#2190FF' }}>Click here</Link></span>
               </div>
             </form>
           </div>

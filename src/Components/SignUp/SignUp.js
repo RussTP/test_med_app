@@ -57,9 +57,9 @@ const SignUp = () => {
         <div className="signup-form">
          <form method="POST" onSubmit={register}>
            <div className="form-group">
+            <div className="signup-text"><h2>Sign Up</h2></div>
                   <label htmlFor="name">Name</label>
           <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" id="name" className="form-control" placeholder="Enter your name" aria-describedby="helpId" />
-          <label htmlFor="email">Email</label>
           </div>
         <div className="form-group">
             <label htmlFor="email">Email</label>
@@ -67,13 +67,15 @@ const SignUp = () => {
                  </div>
         <div className="form-group">
           <label htmlFor="phone">Phone</label>
-          <input value={phone} onChange={(e) => setPhone(e.target.value)} type="text" name="phone" id="phone" className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" />
+          <input value={phone} onChange={(e) => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" />
           </div>
         <div className="form-group">
           <label htmlFor="password">Password</label>
           <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
-          </div>
-                 {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
+          </div> 
+          <button type="submit" class="btn btn-primary mb-2 mr-1 waves-effect waves-light">Submit</button>
+          <button type="reset" class="btn btn-danger mb-2 waves-effect waves-light">Reset</button>
+          {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
          </form>
          </div>
          </div>
