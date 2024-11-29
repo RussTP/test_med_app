@@ -21,10 +21,15 @@ function App() {
         <BrowserRouter>
           {/* Display the Navbar component */}
           <Navbar/>
+          <LandingPage/>
+          <SignUp/>
+          <Login/>
 
           {/* Set up the Routes for different pages */}
           <Routes>
             <Route path="/" element={<LandingPage/>}/>
+            <Route path="/" element={<SignUp/>}/>
+            <Route path="/" element={<Login/>}/>
             {/* Define individual Route components for different pages */}
 
           </Routes>

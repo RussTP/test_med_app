@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SignUp.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
 
 const SignUp = () => {
@@ -9,7 +9,6 @@ const SignUp = () => {
     const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
     const [showerr, setShowerr] = useState('');
-
     const navigate = useNavigate();
 
     const register = async (e) => {
@@ -58,12 +57,23 @@ const SignUp = () => {
         <div className="signup-form">
          <form method="POST" onSubmit={register}>
            <div className="form-group">
-                <label htmlFor="email">Email</label>
+                  <label htmlFor="name">Name</label>
+          <input value={name} onChange={(e) => setName(e.target.value)} type="text" name="name" id="name" className="form-control" placeholder="Enter your name" aria-describedby="helpId" />
+          <label htmlFor="email">Email</label>
+          </div>
+        <div className="form-group">
+            <label htmlFor="email">Email</label>
                  <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" className="form-control" placeholder="Enter your email" aria-describedby="helpId" />
+                 </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone</label>
+          <input value={phone} onChange={(e) => setPhone(e.target.value)} type="text" name="phone" id="phone" className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" />
+          </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
+          </div>
                  {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
-                        </div>
-
-//apply logic here for other elements such as name, phone and password to take user information
          </form>
          </div>
          </div>

@@ -10,7 +10,8 @@ return (
             <h2>Login</h2>
           </div>
           <div className="login-text">
-            Are you a new member? <span><a href="../SignUp/SignUp.html" style="color: #2190FF;"> Sign Up Here</a></span>
+            Are you a new member? 
+            <span><Link to="/SignUp" style={{ color: '#2190FF' }}> Sign Up Here</Link></span>
           </div>
           <br />
           <div className="login-form">

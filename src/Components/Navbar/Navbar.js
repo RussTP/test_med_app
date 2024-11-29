@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "./Navbar.css";
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
                         <a href="../LandingPage/LandingPage.html">Home</a>
                     </li>
                     <li className="link">
-                        <a href="#">Appointments</a>
+                        <Link to="Appointment">Appointments</Link>
                     </li>
 
                     <li className="link">
