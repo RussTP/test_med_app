@@ -18,7 +18,7 @@ return (
             <form>
               <div className="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" aria-describedby="helpId" />
+                <input type="email" name="email" id="email" className="form-control" placeholder="Enter your email" aria-describedby="helpId" />
               </div>
               <div className="form-group">
                 <label for="password">Password</label>
@@ -33,8 +33,8 @@ return (
               </div>
 
               <div className="btn-group">
-                <button type="submit" class="btn btn-primary mb-2 mr-1 waves-effect waves-light">Login</button> 
-                <button type="reset" class="btn btn-danger mb-2 waves-effect waves-light">Reset</button>
+                <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">Login</button> 
+                <button type="reset" className="btn btn-danger mb-2 waves-effect waves-light">Reset</button>
               </div>
               <br />
               <div className="login-text">
