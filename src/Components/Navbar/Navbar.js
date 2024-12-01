@@ -10,8 +10,8 @@ const Navbar = () => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUsername] = useState("");
-    const[/*email*/,setEmail]=useState("");
-   /* const [showDropdown, setShowDropdown] = useState(false); */
+    const[email,setEmail]=useState("");
+    const [showDropdown, setShowDropdown] = useState(false); 
     const handleClick = () => setClick(!click);
 
     
@@ -42,9 +42,9 @@ const Navbar = () => {
         setEmail('');
         window.location.reload();
     }
-    /*const handleDropdown = () => {
+    const handleDropdown = () => {
       setShowDropdown(!showDropdown);
-    }*/
+    }
     useEffect(() => { 
       const storedemail = sessionStorage.getItem("email");
 
@@ -79,6 +79,8 @@ const Navbar = () => {
         </li>
         {isLoggedIn?(
           <>
+         <li className="link welcome-user">
+        <span>Welcome, {username}</span></li>
             <li className="link">
               <button className="btn2" onClick={handleLogout}>
                 Logout
