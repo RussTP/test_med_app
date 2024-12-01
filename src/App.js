@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar/Navbar';
 import LandingPage from './Components/LandingPage/LandingPage';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
+import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation';
 
 
 // Function component for the main App
@@ -24,12 +25,14 @@ function App() {
           <LandingPage/>
           <SignUp/>
           <Login/>
+          <InstantConsultation/>
 
           {/* Set up the Routes for different pages */}
           <Routes>
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/" element={<SignUp/>}/>
             <Route path="/" element={<Login/>}/>
+            <Route path="/instant-consultation" element={<InstantConsultation />} />
             {/* Define individual Route components for different pages */}
 
           </Routes>
