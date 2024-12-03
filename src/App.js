@@ -21,13 +21,14 @@ function App() {
         <BrowserRouter>
           {/* Display the Navbar component */}
           <Navbar/>
-          <FindDoctorSearch/>
+          
           {/* Set up the Routes for different pages */}
           <Routes>
             <Route path="/" element={<LandingPage/>}/>
             <Route path="/SignUp" element={<SignUp/>}/>
             <Route path="/Login" element={<Login/>}/>
             <Route path="/instant-consultation" element={<InstantConsultation />} />
+            <Route path="/Search/Doctors" element={<FindDoctorSearch />} />
             {/* Define individual Route components for different pages */}
 
           </Routes>
