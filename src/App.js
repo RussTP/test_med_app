@@ -10,8 +10,7 @@ import LandingPage from './Components/LandingPage/LandingPage';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation';
-
-
+import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch'
 // Function component for the main App
 function App() {
 
@@ -22,8 +21,7 @@ function App() {
         <BrowserRouter>
           {/* Display the Navbar component */}
           <Navbar/>
-
-
+          <FindDoctorSearch/>
           {/* Set up the Routes for different pages */}
           <Routes>
             <Route path="/" element={<LandingPage/>}/>
