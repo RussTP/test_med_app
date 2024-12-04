@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import './DoctorCard.css';
-/*import AppointmentFormIC from '../AppointmentFormIC/AppointmentForm'*/
+/*import AppointmentFormIC from '../AppointmentFormIC/AppointmentFormIC'*/
 import { v4 as uuidv4 } from 'uuid';
 
 
 const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
   const [showModal, setShowModal] = useState(false);
   const [appointments, setAppointments] = useState([]);
-R
+
   const handleBooking = () => {
     setShowModal(true);
   };
@@ -41,17 +41,17 @@ R
           <div className="doctor-card-detail-experience">{experience} years experience</div>
           <div className="doctor-card-detail-consultationfees">Ratings: {ratings}</div>
         </div>
-        {/* for reference  */}
-        {/* <div>
+         for reference  
+         <div>
               <button className='book-appointment-btn'>                    
                 <div>Book Appointment</div>
               <div>No Booking Fee</div>
             </button>
-              </div> */}
+              </div> 
       </div>
 
 
-      <div className="doctor-card-options-container">
+      {/*<div className="doctor-card-options-container">
        <Popup
           style={{ backgroundColor: '#FFFFFF' }}
           trigger={
@@ -99,7 +99,7 @@ R
             </div>
           )}
         </Popup> 
-      </div>
+        </div>*/}
     </div>
   );
 };
